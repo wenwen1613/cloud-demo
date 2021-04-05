@@ -1,7 +1,11 @@
 spring:
   application:
-    name: EurekaClient
+    name: provider
 eureka:
   client:
     service-url:
       defaultZone: http://euk1.com:8000/eureka/
+    #register-with-eureka: false
+    #fetch-registry: false
+server:
+  port: 8080
