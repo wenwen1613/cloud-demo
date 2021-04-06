@@ -2,8 +2,8 @@ eureka:
   client:
     service-url:
       defaultZone: http://euk1.com:8000/eureka/
-    #register-with-eureka: false
-    #fetch-registry: false
+    register-with-eureka: false
+    fetch-registry: false
   instance:
     hostname: euk1.com
 server:

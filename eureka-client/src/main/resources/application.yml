@@ -5,7 +5,16 @@ eureka:
   client:
     service-url:
       defaultZone: http://euk1.com:8000/eureka/
-    #register-with-eureka: false
-    #fetch-registry: false
+    #上报服务的真实健康状态
+    healthcheck:
+      enabled: true
+#    register-with-eureka: false
+#    fetch-registry: false
 server:
   port: 8080
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
